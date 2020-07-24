@@ -47,7 +47,22 @@ CREATE TABLE categories (
     picture bytea
 );
 
+select * from categories c  
 
+
+select * from products  
+inner join categories on categories.category_id =products.category_id 
+where categories.category_name ="Beverage"
+
+retrieve all the orders from customer 'Cactus Comidas para llevar' which have been already shipped.
+
+select * from orders o2 
+select * from customers 
+inner join orders on orders.customer_id = customers.customer_id 
+where orders.order_date .
+
+
+sele
 --
 -- Name: customer_customer_demo; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
@@ -66,8 +81,10 @@ CREATE TABLE customer_demographics (
     customer_type_id bpchar NOT NULL,
     customer_desc text
 );
+retrieve all the products which category is 'Beverages'
 
-
+select * from products p2 
+select * from customers c2 
 --
 -- Name: customers; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
